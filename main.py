@@ -12,17 +12,17 @@ class MyApp(App):
         # db connect
         db = dba.ActivesDatabase()
         db.database_init()
-        db.create_actives(id=1, name="A001")
-        db.create_actives(id=2, name="A003")
-        db.update_actives(id=2, new_name="A002")
-        db.create_actives(id=3, name="A003")
-        db.create_actives(id=4, name="A004a")
+        db.create_actives(act_id=1, name="A001")
+        db.create_actives(act_id=2, name="A003")
+        db.update_actives(act_id=2, new_name="A002")
+        db.create_actives(act_id=3, name="A003")
+        db.create_actives(act_id=4, name="A004a")
         layout = BoxLayout(orientation='vertical')
         input_name = TextInput()
         button_create = Button(text='create')
         layout.add_widget(input_name)
         layout.add_widget(button_create)
-        db.delete_actives(id=4)
+        db.delete_actives(act_id=4)
         return layout
 
 
