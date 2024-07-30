@@ -1,3 +1,4 @@
 key.py 
 venv/
 assets/database/actives.db
+assets/logs/db_logs.log
