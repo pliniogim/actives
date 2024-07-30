@@ -23,6 +23,8 @@ class MyApp(App):
         layout.add_widget(input_name)
         layout.add_widget(button_create)
         db.delete_actives(act_id=4)
+        db.delete_actives(act_id=4)
+        db.update_actives(act_id=4, new_name="A002")
         return layout
 
 
